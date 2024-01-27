@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Atelier 1</title>
+</head>
+<body>
+    <header>
+        <a href="accueil.html">home</a>
+        <a href="projet_et_taches.html">Projet et tâches</a>
+        <a href="liste_employes.html">Liste des employés</a>
+        <a href="inscription.html">Inscription</a>
+    </header>
+    
+    <hr>
+    
+    <img src="assets/image.jpg" alt="image" height="400" width="1500">
+    <h1>Inscription au site</h1>
+    
+    <form>
+        <label for="name"><b>Nom:</b>&nbsp;</label>
+        <input type="text" id="name" name="name" required pattern="[a-zA-Z]{2,}" title="Entrer un nom valide, au moins 2 caractères">
+        <br><br>
+        
+        <label for="prenom"><b>Prénom:</b>&nbsp;</label>
+        <input type="text" id="prenom" name="prenom" required pattern="[a-zA-Z]{2,}" title="Entrer un prénom valide, au moins 2 caractères">
+        <br><br>
+        
+        <label for="email"><b>Email:</b>&nbsp;</label>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+        
+        <label for="telephone"><b>Téléphone:</b>&nbsp;</label>
+        <input type="text" id="telephone" name="telephone" required pattern="[0-9]{8}" title="Veuillez entrer un numéro de téléphone valide (8 chiffres)">
+        <br><br>
+        
+        <label for="date"><b>Date de naissance:</b>&nbsp;</label>
+        <input type="date" id="date" name="date" required>
+        <br><br>
+        
+        <label for="mot_de_passe"><b>Mot de passe:</b>&nbsp;</label>
+        <input type="password" id="mot_de_passe" name="mot_de_passe" required>
+        <br><br>
+        
+        <input type="submit" value="S'inscrire">
+    </form>
+    
+    <footer>
+        <hr>
+        <b>Vous pouvez nous contacter par email : <a href="mailto:contact@esprit.tn">contact@esprit.tn</a></b>
+        <p>Adresse : Ghazela, Tunis</p>
+    </footer>
+</body>
+</html>
+
